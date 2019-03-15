@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Register</title>
+</head>
+
+<body>
+	<body bgcolor="orange">
+	
+	<center>
+  <p><font face="tahoma" size="5" color="rgba(0,0,0,1.00)"><a href="index.html">HOMEPAGE </a> | <a href="films.html">FILMS</a> | <a href="books.html">BOOKS</a> | <a href="musics.html">MUSICS</a> | <a href="usefullinks.html">USEFUL LINKS</a> | <a href="contactme.html">CONTACT ME</a> | <a href="registration.html"><font face="tahoma" size="6" color="maroon"><strong>REGISTER</strong></font></a></font></p>
+</center><br>
+	<form onsubmit="window.alert('Thanks for registration!')">
+	<table width="500" border="0" align="center">
+  <tbody>
+    <tr>
+      <td>Name (Middle Name) Surname: </td>
+	      <td><input type="text"  name="name" required></td>
+    </tr>
+    <tr>
+      <td>Password: </td>
+      <td><input type="password" name="psw" required></td>
+    </tr>
+    <tr>
+      <td>E-mail: </td>
+	      <td><input type="text"  name="mail" placeholder="xyz@abc.com" required></td>
+    </tr>
+    <tr>
+      <td>Date of Birth: </td>
+	      <td><input type="date"  name="date" required></td>
+    </tr>
+    <tr>
+      <td>Department: </td>
+	      <td><select name="cars">
+  <option value="empty">Please choose your Department..</option>
+  <option value="ceng">Computer Eng.</option>
+  <option value="elec">Electric-Electronic Eng.</option>
+  <option value="mac">Machine Eng.</option>
+  <option value="other">Others..</option>
+</select></td>
+    </tr>
+    <tr>
+      <td>Gender: </td>
+	      <td><select name="Gender">
+  <option value="empty">Please choose your Gender..</option>
+  <option value="male">Male</option>
+  <option value="female">Female</option>
+</select></td>
+    </tr>
+    <tr>
+      <td>About Me: </td>
+	      <td><textarea></textarea></td>
+    </tr>
+    <tr>
+      <td>Upload Your Photo: </td>
+	      <td><input type="file"  name="dment" required></td>
+    </tr>
+    <tr>
+      <td colspan="2">Mark Your Interests </td>
+    </tr>
+    <tr>
+      <td>
+  <input type="checkbox" name="int1" value="music"> Musics<br>
+  <input type="checkbox" name="int2" value="art"> Art <br>
+  <input type="checkbox" name="int3" value="fball"> Football <br>
+  <input type="checkbox" name="int4" value="bball"> Basketball <br>
+  <input type="checkbox" name="int5" value="science"> Science <br>
+      </td>
+      <td width="220">
+  <input type="checkbox" name="int6" value="film"> Films<br>
+  <input type="checkbox" name="int7" value="game"> Video Games <br>
+  <input type="checkbox" name="int8" value="cook"> Cooking <br>
+  <input type="checkbox" name="int9" value="series"> Watching TV Series <br>
+  <input type="checkbox" name="int10" value="smedia"> Using Social Media <br></td>
+    </tr><br>
+    <tr>
+      <td colspan="2"><center><button type="submit" >Submit</button></center></td>
+    </tr><br>
+    <tr>
+      <td colspan="2"><center><button type="reset" >Reset</button></center></td>
+    </tr>
+  </tbody>
+</table></form><br><br>
+
+	<center><a href="index.html"><img src="images/hpage.jpg" width="51" height="51"/></a></center>
+	
+	</body>
+</html>
