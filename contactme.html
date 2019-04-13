@@ -3,52 +3,188 @@
 <head>
 <meta charset="utf-8">
 <title>Contact Me</title>
-</head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <style>
+		
+			input[type=text], select, textarea{
+				background-color:#07396A;
+				color:#09F2DD;
+  				width: 100%;
+  				padding: 12px;
+  				border: 1px solid #ccc;
+  				border-radius: 4px;
+  				box-sizing: border-box;
+  				resize: vertical;
+			}
+
+			label {
+  				padding: 12px 12px 12px 0;
+  				display: inline-block;
+			}
+
+			input[type=submit] {
+  				background-color: #4CAF50;
+  				color: white;
+  				padding: 12px 20px;
+  				border: none;
+  				border-radius: 4px;
+  				cursor: pointer;
+  				float:left;
+			}
+
+			.container {
+  				border-radius: 5px;
+  				background-color:#636;
+  				padding: 20px;
+			}
+
+			.col-25 {
+  				float: left;
+  				width: 25%;
+  				margin-top: 6px;
+			}
+
+			.col-75 {
+  				float: left;
+  				width: 75%;
+  				margin-top: 6px;
+			}
+
+			.row:after {
+  				content: "";
+  				display: table;
+  				clear: both;
+			}
+
+		@media screen and (max-width: 600px) {
+  			.col-25, .col-75, input[type=submit] {
+    			width: 100%;
+    			margin-top: 0;
+  			}
+		}
+			
+			h5{
+				color:rgb(204,204,204);
+				font-size:15px;	
+				
+				}
+			h4{
+				color:rgb(204,204,204);
+				font-size:35px;	
+				}
+		
+			table{
+				color:rgb(204,204,204);			
+				}
+		
+			p{ color:rgb(204,204,204);
+				font-size:20px;	
+				border: 2px solid;
+				border-color: rgb(153,51,153);
+				border-radius: 20px;	
+				}
+        	
+			body{
+    			background-image:url(images/background.jpeg);
+				background-attachment:fixed;
+				}
+        
+        </style>
+        
+	</head>
 
 <body>
-	<body bgcolor="orange">
-	
-<center>
-  <p><font face="tahoma" size="5" color="rgba(0,0,0,1.00)"><a href="index.html">HOMEPAGE </a> | <a href="films.html">FILMS</a> | <a href="books.html">BOOKS</a> | <a href="musics.html">MUSICS</a> | <a href="usefullinks.html">USEFUL LINKS</a> | <a href="contactme.html"><font face="tahoma" size="6" color="maroon"><strong>CONTACT ME</strong></font></a> | <a href="registration.html">REGISTER</a></font></p>
-</center><br>
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top text-white">
+   		 <a class="navbar-brand" href="#top"><img src="images/meo.png" width="100" height="40"></a>
+  			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMeo"
+    		  	aria-controls="navMeo" aria-expanded="false" aria-label="Toggle navigation">
+    		  	<span class="navbar-toggler-icon"></span>
+ 			  </button>
+    <div class="collapse navbar-collapse" id="navMeo">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">HOMEPAGE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="films.html">FILMS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="books.html">BOOKS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="musics.html">MUSICS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="usefullinks.html">USEFUL LINKS</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="contactme.html">CONTACT ME<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="registration.html">REGISTER</a>
+        </li>
+      </ul>
+    </div>
+</nav><br><br><br><br><br>
 	<form action="#"  onsubmit="window.alert('Your message is sent!')" >
-	<table width="350" border="0" align="center">
-	  <tbody>
-	    <tr>
-	      <td>Name, Surname: </td>
-	      <td><input type="text"  name="name" required></td>
-        </tr>
-	    <tr>
-	      <td> E-mail:</td>
-	      <td><input type="text"  name="email" required></td>
-        </tr>
-	    <tr>
-	      <td>Telephone: </td>
-	      <td><input type="text" maxlength="11" placeholder="Max. length is 11" pattern="[0-9]+" name="phone" required></td>
-        </tr>
-	    <tr>
-	      <td>Issue:</td>
-	      <td><input type="text"  name="issue" required></td>
-        </tr>
-	    <tr>
-	      <td>Message: </td>
-	      <td><textarea></textarea></td>
-        </tr>
-	    <tr>
-	      <td>&nbsp;</td>
-	      <td><button type="submit">Send</button></td>
-        </tr>
-      </tbody>
-</table>
+	<div class="container">
+    <div class="row">
+      <div class="col-25">
+        <label for="Name"><h5>Name , Surname:</h5></label>
+      </div>
+      <div class="col-75">
+        <input type="text"  name="name" required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="mail"><h5>E-Mail: </h5></label>
+      </div>
+      <div class="col-75">
+        <input type="text"  name="email" required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="phone"><h5>Telephone: </h5></label>
+      </div>
+      <div class="col-75">
+        <input type="text" maxlength="11" placeholder="Max. length is 11" pattern="[0-9]+" name="phone" required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="issue"><h5>Issue: </h5></label>
+      </div>
+      <div class="col-75">
+        <input type="text"  name="issue" required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="msg"><h5>Message: </h5></label>
+      </div>
+      <div class="col-75">
+        <textarea></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <button type="submit" class="btn btn-success">Send</button>
+    </div>
+</div><br><br>
 	</form>
-	<center><h2>OR</h2></center><br>
-	<center><p>If you want to contact me, click to the adress below:</p></center><br>
-<center><p><a href="mailto:mustafaemre456@gmail.com" target="_blank">mustafaemre456@gmail.com</a></p><br>
+    
+    
+       
+<center><h4>OR</h4></center><br>
+	<center><p>If you want to contact me, click to the adress below:<br><br>
+	<a href="mailto:mustafaemre456@gmail.com" target="_blank">mustafaemre456@gmail.com</a></p><br>
 	<a href="index.html"><img src="images/hpage.jpg" width="51" height="51" alt=""/></a>
 	</center>
 	<center><a href="https://www.facebook.com/Mustafa.Emre.Orbag" target="_blank" ><img src="images/fbook.jpg" width="54" height="51" alt=""/></a><a href="mailto:mustafaemre456@gmail.com" target="_blank"><img src="images/mail.jpg" width="51" height="50" alt=""/></a><a href="https://twitter.com/meorbag" target="_blank"><img src="images/tw.jpg" width="51" height="51" alt=""/></a></center>	
 	
-	
+<br><br>
 	
 </body>
 </html>
